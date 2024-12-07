@@ -1,2 +1,9 @@
 # Website-videoGame
-This repository will be based on a web page where fashion games and descriptions of current games will be discussed.
+<table>
+  <td witdh= 50% align="justify">This page is made to show the ratings, descriptions of the games that are currently in fashion, in addition to commenting on the franchises of the most famous game sagas in the world.</td>
+  <td align="center"><img witdh= 30% src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/02/654389eb064ca.png"></td>
+</table>
+## technologies to use
+<div align = "center">
+  <p></p>
+</div>
