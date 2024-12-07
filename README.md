@@ -4,7 +4,7 @@
   <td align="center"><img witdh= 30% src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/02/654389eb064ca.png"></td>
 </table>
 <h3>Technologies to use</h3>
-<div align = "center">
+<div>
   <p align = "justify">The technologies that I am going to use to create the page are the following:</p>
   <img src="https://i.ibb.co/tL1v6Jt/html-5.png" witdh = 10%>
   <img src="https://i.ibb.co/j86Drxg/css-3.png" witdh = 10%>
