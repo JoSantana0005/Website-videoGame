@@ -31,7 +31,12 @@ nav h1{
     letter-spacing: 1px;
     font-weight: 600;
     text-align: center;
-    color: var(--FontSpecific)
+    color: var(--FontSpecific);
+    cursor: pointer;
+    transition: padding .1s linear;
+}
+nav h1:hover{
+    padding: 5px;
 }
 nav .content--sidebar{
     width: 100%;
@@ -91,9 +96,10 @@ nav .content--sidebar ul li a{
 }
 /*Parte del sidebar de los juegos mas jugados*/
 nav .Most--Played{
+    border: 1px solid #aaa;
     width: 100%;
     padding: 2px;
-    height: 395px;
+    height: 380px;
     display: flex;
     flex-flow: column wrap;
     gap: 2px;
@@ -105,8 +111,9 @@ nav .Most--Played h2{
     font-weight: 500;
 }
 nav .Most--Played .Most--videoGame{
+    border: 1px solid var(--BorderColor);
     padding: 3px;
-    height: 360px;
+    height: 345px;
     display: flex;
     flex-direction: column;
     overflow-x: auto;
