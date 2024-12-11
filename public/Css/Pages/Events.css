@@ -1,0 +1,26 @@
+:root{
+    --PrimaryColor: #000000;
+    --SecondaryColor: #292A29;
+    --TertiaryColor: #6C2905;
+    --FontColor: #FFFFFF;
+    --BorderColor: #AAAAAA;
+    --FontSpecific: #BBB4CF;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+main{
+    border: 1px solid var(--BorderColor);
+    width: 85%;
+    position: relative;
+    left: 205px;
+    max-height: 100vh;
+    height: 570px;
+    color: var(--FontColor);
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+}
