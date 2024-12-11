@@ -11,3 +11,165 @@
     padding: 0%;
     box-sizing: border-box;
 }
+main{
+    border: 1px solid var(--BorderColor);
+    width: 85%;
+    position: relative;
+    left: 205px;
+    max-height: 100vh;
+    height: 570px;
+    color: var(--FontColor);
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+}
+/*Defino el width y height de los section*/
+main section{
+    width: 100%;
+    height: 250px;
+    padding: 2px;
+}
+/*Estilos para la parte de arriba del contenido del main*/
+main .content--top{
+    height: 245px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    gap: 2px;
+}
+main .content--top .Recommend{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+    border-bottom: 2px solid var(--BorderColor);
+}
+main .content--top .Recommend h2{
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    padding-left: 5px;
+    font-weight: 500;
+    color: var(--FontSpecific);
+}
+main .content--top .Recommend div{
+    width: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .content--top .Recommend--Videogame{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+main .content--top .Recommend--Videogame::-webkit-scrollbar{
+    display: none;
+}
+main .content--top .Recommend--Videogame .videogame--recommed{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    gap: 4px;
+}
+
+main .content--top .Recommend--Videogame .videogame--recommed div{
+    width: 283px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    gap: 4px;
+}
+main .content--top .Recommend--Videogame .videogame--recommed div img{
+    width: 100%;
+    height: 165px;
+    border: 1px solid var(--BorderColor);
+    border-radius: 5px;
+    transition: border .1s linear, padding .1s linear;
+    cursor: pointer;
+}
+main .content--top .Recommend--Videogame .videogame--recommed div img:hover{
+    padding: 2px;
+    border: 1px solid var(--SecondaryColor);
+}
+main .content--top .Recommend--Videogame .videogame--recommed div h3{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*Diseño de la parte de abajo de la main*/
+main .content--bottom{
+    position: relative;
+    top: -16px;
+    height: 310px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+    padding: 5px 10px;
+}
+main .content--bottom h2{
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    color: var(--FontSpecific);
+    font-weight: 500;
+}
+main .content--bottom .Popular--games{
+    height: 270px;
+    padding: 4px;
+    border-top: 2px solid var(--BorderColor);
+    display: flex;
+    margin: 0;
+    flex-flow: row;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+main .content--bottom .Popular--games::-webkit-scrollbar{
+    width: 6px;
+    background-color: transparent;
+}
+main .content--bottom .Popular--games::-webkit-scrollbar-thumb{
+    background-color: var(--PrimaryColor);
+}
+main .content--bottom .Popular--games .Games--pop{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2px;
+    justify-content: center;
+    gap: 20px;
+}
+main .content--bottom .Popular--games .Games--pop div{
+    width: 140px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+main .content--bottom .Popular--games .Games--pop div img{
+    border: 2px solid var(--BorderColor);
+    width: 85%;
+    height: 135px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border .1s linear, padding .1s linear;
+}
+main .content--bottom .Popular--games .Games--pop div img:hover{
+    padding: 2px;
+    border: 2px solid var(--SecondaryColor);
+}
+main .content--bottom .Popular--games .Games--pop div h4{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+
+}
