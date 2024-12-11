@@ -96,7 +96,6 @@ nav .content--sidebar ul li a{
 }
 /*Parte del sidebar de los juegos mas jugados*/
 nav .Most--Played{
-    border: 1px solid #aaa;
     width: 100%;
     padding: 2px;
     height: 380px;
@@ -111,7 +110,6 @@ nav .Most--Played h2{
     font-weight: 500;
 }
 nav .Most--Played .Most--videoGame{
-    border: 1px solid var(--BorderColor);
     padding: 3px;
     height: 345px;
     display: flex;
