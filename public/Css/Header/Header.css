@@ -6,3 +6,135 @@
     --BorderColor: #AAAAAA;
     --FontSpecific: #BBB4CF;
 }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    width: 85%;
+    position: relative;
+    left: 205px;
+    padding: 2px 3px;
+    color: var(--FontColor);
+    border-bottom: 2px solid var(--BorderColor);
+}
+header .content--header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+/*Contenido de la parte izquierda del header*/
+header .content--header .Content--left{
+    width: 65%;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+header .content--header .Content--left img{
+    width: 36px;
+    height: 36px;
+    border-radius: 40px;
+    border: 2px solid var(--BorderColor);
+    cursor: pointer;
+    margin-right: 5px;
+    transition: .1s linear;
+}
+header .content--header .Content--left img:hover{
+    box-shadow: 0 0 5px var(--FontColor);
+}
+
+header .content--header .Content--left .Search--header{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    gap: 2px;
+}
+/*Input del header*/
+header .content--header .Content--left .Search--header input{
+    width: 100%;
+    padding: 6px 10px;
+    background-color: transparent;
+    border: 2px solid var(--BorderColor);
+    border-radius: 20px;
+    font-size: 1em;
+    color: var(--FontSpecific);
+    font-weight: 500;
+    transition: .1s linear;
+    outline: none;
+}
+header .content--header .Content--left .Search--header input::placeholder{
+    color: var(--FontSpecific);
+}
+header .content--header .Content--left .Search--header input:focus{
+    border: 2px solid #ddd;
+    background-color: var(--PrimaryColor);
+}
+header .content--header .Content--left .Search--header input:hover{
+    border: 2px solid #ddd;
+    background-color: var(--PrimaryColor);
+}
+header .content--header .Content--left .Search--header .Iconos--header{
+    width: 12%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+
+/*Contenido de la parte derecha del header*/
+header .content--header .Content--right{
+    display: flex;
+    width: 405px;
+}
+header .content--header .Content--right .Section--header{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+header .content--header .Content--right .Section--header button{
+    width: 240px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid var(--BorderColor);
+    text-align: center;
+    color: var(--FontSpecific);
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .1s linear;
+}
+header .content--header .Content--right .Section--header button:hover{
+    background-color: var(--PrimaryColor);
+    border: 2px solid var(--BorderColor);
+    color: var(--FontColor);
+}
+header .content--header .Content--right .Section--header div{
+    display: flex;
+    align-items: center;
+    width: 125px;
+    justify-content: space-evenly;
+}
+header .content--header .Content--right .Section--header img{
+    width: 36px;
+    height: 36px;
+    border-radius: 40px;
+    border: 2px solid var(--BorderColor);
+    cursor: pointer;
+}
+/*Hover para los iconos*/
+svg{
+    cursor: pointer;
+    transition: .1s linear;
+}
+svg:hover{
+    padding: 2px;
+    fill: var(--TertiaryColor);
+}

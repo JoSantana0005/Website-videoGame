@@ -7,5 +7,6 @@
     --FontSpecific: #BBB4CF;
 }
 body{
-    
+    background: linear-gradient(to right, var(--PrimaryColor),var(--SecondaryColor));
+    overflow: auto;
 }
