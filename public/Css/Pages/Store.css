@@ -13,7 +13,6 @@
 }
 /*Contenido de la main*/
 main{
-    border: 1px solid var(--BorderColor);
     width: 85%;
     position: relative;
     left: 205px;
@@ -26,7 +25,7 @@ main{
     gap: 2px;
 }
 main .Content--store{
-    border: 1px solid var(--BorderColor);
+
     height: 100%;
     padding: 3px;
     overflow-y: auto;
