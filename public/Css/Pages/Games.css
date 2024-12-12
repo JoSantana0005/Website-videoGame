@@ -24,3 +24,91 @@ main{
     flex-flow: column wrap;
     gap: 2px;
 }
+main .Content--Main{
+    border: 1px solid var(--BorderColor);
+    width: 100%;
+    max-height: 640px;
+    height: 100%;
+    padding: 4px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+main .Content--Main::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+main .Content--Main::-webkit-scrollbar-thumb{
+    background-color: var(--PrimaryColor);
+    border-radius: 10px;
+}
+main .Content--Main h1{
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--FontSpecific);
+    border-bottom: 2px solid var(--BorderColor);
+}
+main .Content--Main section{
+    height: 190px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+}
+main .Content--Main section .Catagory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+main .Content--Main section .Catagory h2{
+    font-size: 1.6em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--FontColor);
+}
+main .Content--Main section .Catagory div{
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .Content--Main section article:nth-child(2){
+    border-top: 2px solid var(--BorderColor);
+    border-bottom: 2px solid var(--BorderColor);
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+main .Content--Main section article:nth-child(2)::-webkit-scrollbar{
+    display: none;
+}
+main .Content--Main section article:nth-child(2) .List{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main .Content--Main section article:nth-child(2) .List div{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .Content--Main section article:nth-child(2) div img{
+    border: 2px solid var(--BorderColor);
+    width: 80%;
+    height: 115px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+main .Content--Main section article:nth-child(2) div img:hover{
+    border: 2px solid var(--SecondaryColor);
+    padding: 2px;
+}
