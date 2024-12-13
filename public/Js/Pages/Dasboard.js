@@ -19,3 +19,14 @@ arrow_right.addEventListener('click',()=>{
         console.log("Hubo un error")
     }
 })
+// Conexion a la api rawg
+
+const Api = async () =>{
+    try{
+        const repuesta = await fetch('https://api.rawg.io/api/platforms?key=d64b911edb634a9ca476c56451fc1fb4');
+        console.log(repuesta);
+    }catch (e){
+        console.error(`Hubo un error en la conexion ${e}`)
+    }
+}
+Api();
