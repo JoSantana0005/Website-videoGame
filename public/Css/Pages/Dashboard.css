@@ -169,5 +169,10 @@ main .content--bottom .Popular--games .Games--pop div img:hover{
 main .content--bottom .Popular--games .Games--pop div h4{
     font-size: 0.8em;
     letter-spacing: 1px;
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
 
 }
