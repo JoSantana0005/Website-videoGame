@@ -22,7 +22,7 @@ const arrow_right_fight = document.getElementById('Arrow-Right-fight');
 //Evento para volver al dashboard
 let dashboard = document.getElementById('Dashboard');
 dashboard.addEventListener('click', () =>{
-    const enlace = '../index.html'
+    const enlace = '../../../public/index.html'
     if(dashboard){
         window.location.href = enlace
     }else{
