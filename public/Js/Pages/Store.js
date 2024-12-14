@@ -1,3 +1,5 @@
+let page = 1;
+const key = 'd64b911edb634a9ca476c56451fc1fb4';
 let cont = 1
 let Remove = document.getElementById('Remove');
 let Add = document.getElementById('Add');
@@ -48,5 +50,22 @@ close_Modal.addEventListener('click',() =>{
     modal.close();
 })
 
+// conexion de a la api para obtener todos los juegos
+let Games = '';
+const obtener_juegos = async() =>{
+    const respuesta = await fetch(`https://api.rawg.io/api/games?key=${key}&page_size=100&page=${page}`);
+    if(respuesta.status == 200){
+        const datos = await respuesta.json();
+        console.log(datos);
+        const games = datos.results;
+        games.forEach(game =>{
+            Games += `<div class="VideoGame">
+                    <img src="${game.background_image}" alt="Imagen">
+                </div>`
+        })
+        document.getElementById('Chartologist').innerHTML = Games;
+    }
+}
+obtener_juegos();
 RemoveCont();
 AddCont();

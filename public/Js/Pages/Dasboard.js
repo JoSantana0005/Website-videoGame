@@ -1,5 +1,5 @@
 const key = 'd64b911edb634a9ca476c56451fc1fb4';
-const id = '20';
+
 //Evento Para mover el contenido de recommend of you
 let arrow_left = document.getElementById('Arrow-left');
 let arrow_right = document.getElementById('Arrow-Right');
