@@ -112,3 +112,12 @@ main .Content--Main section article:nth-child(2) div img:hover{
     border: 2px solid var(--SecondaryColor);
     padding: 2px;
 }
+main .Content--Main section article:nth-child(2) div h4{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    max-width: 110px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
