@@ -74,7 +74,30 @@ close_Modal.addEventListener('click',() =>{
     Amount.textContent = 1;
     modal.close();
 })
-
+// conexion para los juegos mas jugados
+const Obtener_jugados = async() =>{
+    try{
+        const respuesta = await fetch(`https://api.rawg.io/api/games?key=${key}&dates=2020-01-01,2024-01-01`);
+        console.log(respuesta)
+        if(respuesta.status == 200){
+            const datos = await respuesta.json();
+            const Mosts = datos.results
+            let Most_played = '';
+            Mosts.forEach(Most =>{
+                Most_played += `<article>
+                    <img src="${Most.background_image}" alt="VideoGame">
+                    <div>
+                        <span id="Name--videoGame">${Most.name}</span>
+                        <span id="Most--played">${Most.added}</span>
+                    </div>
+                </article>`
+            })
+            document.getElementById('Most--videoGame').innerHTML = Most_played
+        }
+    }catch(e){
+        console.error(`Hubo un error ${e}`)
+    }
+}
 // conexion de a la api para obtener todos los juegos
 
 const obtener_juegos = async() =>{
@@ -95,5 +118,6 @@ const obtener_juegos = async() =>{
 ChangePageAdd();
 ChangePageRemove();
 obtener_juegos();
+Obtener_jugados();
 RemoveCont();
 AddCont();
