@@ -40,13 +40,30 @@ main .Content--store::-webkit-scrollbar-thumb{
     background-color: var(--PrimaryColor);
     border-radius: 10px;
 }
+main .Content--store .Title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 83%;
+    margin-bottom: 120px;
+    padding: 3px 5px;
+    background-color: var(--PrimaryColor);
+}
 main .Content--store h2{
     font-size: 1.6em;
     letter-spacing: 1px;
     font-weight: 500;
     color: var(--FontSpecific);
 }
+main .Content--store .Title div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70px;
+}
 main .Content--store article{
+    margin-top: 35px;
     border-top: 2px solid var(--BorderColor);
     display: flex;
     flex-flow: row wrap;

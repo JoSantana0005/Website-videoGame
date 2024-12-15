@@ -3,6 +3,31 @@ const key = 'd64b911edb634a9ca476c56451fc1fb4';
 let cont = 1
 let Remove = document.getElementById('Remove');
 let Add = document.getElementById('Add');
+const AddPage = document.getElementById('ChangeAdd')
+const RemovePage = document.getElementById('ChangeRemove');
+// function para cambiar de pagina
+function ChangePageAdd(){
+    AddPage.addEventListener('click',()=>{
+        if(AddPage){
+            page++;
+            obtener_juegos();
+            console.log(page)
+        }else{
+            console.log("Hubo un error")
+        }
+    })
+}
+// function para volver a la pagina anterior
+function ChangePageRemove(){
+    RemovePage.addEventListener('click',()=>{
+        if(document.getElementById('ChangeRemove')){
+            page--;
+            obtener_juegos();
+        }else{
+            console.log("Hubo un error")
+        }
+    })
+}
 //Function para disminuir la cantidad de juegos
 function RemoveCont(){
     const Amount = document.getElementById('Amount');
@@ -51,9 +76,10 @@ close_Modal.addEventListener('click',() =>{
 })
 
 // conexion de a la api para obtener todos los juegos
-let Games = '';
+
 const obtener_juegos = async() =>{
-    const respuesta = await fetch(`https://api.rawg.io/api/games?key=${key}&page_size=100&page=${page}`);
+    const respuesta = await fetch(`https://api.rawg.io/api/games?key=${key}&page_size=100&page=`+page);
+    let Games = '';
     if(respuesta.status == 200){
         const datos = await respuesta.json();
         console.log(datos);
@@ -66,6 +92,8 @@ const obtener_juegos = async() =>{
         document.getElementById('Chartologist').innerHTML = Games;
     }
 }
+ChangePageAdd();
+ChangePageRemove();
 obtener_juegos();
 RemoveCont();
 AddCont();
