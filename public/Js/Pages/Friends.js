@@ -9,6 +9,18 @@ dashboard.addEventListener('click', () =>{
         console.log("Hubo un error")
     }
 })
+// Evento para mover las fotos de los amigos
+const arrow_left = document.getElementById('Left--arrow');
+const arrow_right = document.getElementById('Right--arrow');
+let List_friends = document.getElementById('List--friends');
+
+//Left-arrow
+arrow_left.addEventListener('click',()=>{
+    List_friends.scrollLeft -= 290;
+})
+arrow_right.addEventListener('click',()=>{
+    List_friends.scrollLeft += 290;
+})
 // conexion a la api para obtener los juegos mas jugados
 let most_Played = '';
 const Most_played = async () =>{
