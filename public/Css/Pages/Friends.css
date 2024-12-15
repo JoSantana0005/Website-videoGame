@@ -24,3 +24,146 @@ main{
     flex-flow: column wrap;
     gap: 2px;
 }
+main .content--main{
+    border: 1px solid var(--BorderColor);
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+main .content--main .Profile{
+    border: 1px solid var(--BorderColor);
+    width: 55%;
+    height: 390px;
+}
+main .content--main .Profile article{
+    padding: 2px;
+    width: 100%;
+    border: 1px solid var(--BorderColor);
+    height: 195px;
+}
+main .content--main .Profile .Details--profile{
+    display: flex;
+    justify-content: left;
+    gap: 4px;
+}
+main .content--main .Profile .Details--profile .Imagen{
+    width: 155px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+main .content--main .Profile .Details--profile .Imagen h2{
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    color: var(--FontSpecific);
+    font-weight: 500;
+}
+main .content--main .Profile .Details--profile .Imagen div{
+    width: 100%;
+    height: 152px;
+    padding: 5px;
+}
+main .content--main .Profile .Details--profile .Imagen div img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid var(--BorderColor);
+    border-radius: 45%;
+}
+main .content--main .Profile .Description--profile{
+    border: 1px solid var(--BorderColor);
+    width: 75%;
+    padding: 5px;
+}
+main .content--main .Profile .Description--profile div{
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    border-bottom: 1px solid var(--BorderColor);
+}
+main .content--main .Profile .Description--profile div span{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+#Paragraphy{
+    height: 90px;
+    justify-content: left;
+    overflow-y: auto;
+    border-bottom: none;
+    scroll-behavior: smooth;
+}
+#Paragraphy::-webkit-scrollbar{
+    width: 9px;
+    background-color: transparent;
+}
+#Paragraphy::-webkit-scrollbar-thumb{
+    background-color: var(--SecondaryColor);
+    border-radius: 5px;
+}
+#Paragraphy p{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-align: justify;
+    width: 100%;
+    text-wrap: pretty;
+}
+main .content--main .Profile .Games{
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3px;
+    text-align: left;
+}
+main .content--main .Profile .Games .Your-game{
+    border-top: 1px solid var(--BorderColor);
+    height: 70%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+main .content--main .Profile .Games .Your-game::-webkit-scrollbar{
+    background-color: transparent;
+    width: 9px;
+}
+main .content--main .Profile .Games .Your-game::-webkit-scrollbar-thumb{
+    background-color: var(--SecondaryColor);
+    border-radius: 5px;
+}
+main .content--main .Profile .Games h3{
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: var(--FontSpecific);
+    font-weight: 500;
+    padding-left: 5px;
+}
+main .content--main .Profile .Games .Your-game .List--Game{
+    height: 95px;
+    display: flex;
+}
+main .content--main .Profile .Games .Your-game .List--Game div{
+    margin-top: 15px;
+    height: 95px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+main .content--main .Profile .Games .Your-game .List--Game div img{
+    width: 100%;
+    height: 110px;
+    border: 1px solid var(--BorderColor);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: padding .1s linear, border .1s linear;
+}
+main .content--main .Profile .Games .Your-game .List--Game div img:hover{
+    padding: 2px;
+    border: 1px solid var(--SecondaryColor);
+}

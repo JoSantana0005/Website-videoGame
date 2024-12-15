@@ -32,5 +32,27 @@ const Most_played = async () =>{
         console.error(`Hubo un error ${e}`)
     }
 }
-
+//conexion de la api de los juegos favoritos //Aqui tenemso que hacer algo pero pa ver como se ven los juegos
+let games = '';
+const Your_games = async () =>{
+    try{
+        const respuesta = await fetch(`https://api.rawg.io/api/games?key=${key}&page_size=30&dates=2010-01-03,2020-01-01`);
+        if(respuesta.status == 200){
+            const datos = await respuesta.json();
+            console.log(datos)
+            const Your_game = datos.results;
+            Your_game.forEach(game =>{
+                games += `<div class="List--Game">
+                        <div>
+                            <img src="${game.background_image}" alt="Logo">
+                        </div>
+                    </div>`;
+            })
+            document.getElementById('Your-game').innerHTML = games;
+        }
+    }catch(e){
+        console.error(`Hubo un error ${e}`)
+    }
+}
+Your_games();
 Most_played();
