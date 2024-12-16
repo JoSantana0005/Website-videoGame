@@ -2,7 +2,7 @@ const key = 'd64b911edb634a9ca476c56451fc1fb4';
 // Evnto para abrir el login
 const Login = document.getElementById('Section');
 Login.addEventListener('click',()=>{
-    const enlace = 'src/Pages/Login/Login.html';
+    const enlace = 'src/Layouts/Login/Login.html';
     if(Login){
         window.location.href = enlace;
     }else{

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website-VideoGame || Events</title>
-    <link rel="stylesheet" href="../../../public/Css/Pages/Events.css">
+    <title>Website-VideoGame || Friends</title>
+    <link rel="stylesheet" href="../../../public/Css/Pages/Friends.css">
     <link rel="stylesheet" href="../../../public/Css/Header/Header.css">
     <link rel="stylesheet" href="../../../public/Css/Sidebar/Sidebar.css">
     <link rel="stylesheet" href="../../../public/Css/font/fonts.css">
     <link rel="stylesheet" href="../../../public/Css/Body.css">
-    <link rel="Icon" href="../../../public/Imagen/Event.svg" type="Imagen/svg">
+    <link rel="icon" href="../../../public/Imagen/Friends.svg" type="Imagen/svg">
 </head>
 <body>
     <!--Header-->
@@ -48,7 +48,7 @@
             <button id="News">News</button>
             <ul class="List--page">
                 <li title="Friends">
-                    <a href="../Friends/Friends.html">Friends</a>
+                    <a href="Friends.html">Friends</a>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
                         <path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/>
                     </svg>
@@ -66,7 +66,7 @@
                     </svg>
                 </li>
                 <li title="Events">
-                    <a href="Events.html">Events</a>
+                    <a href="../Events/Events.html">Events</a>
                     <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
                         <path d="M580-240q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/>
                     </svg>
@@ -76,45 +76,94 @@
         <div class="Most--Played">
             <h2>Most Players</h2>
             <section class="Most--videoGame" id="Most--videoGame">
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4gEE_tV1Hq2Iw4OLAUA6VaU8KJVZKZNMfA&s" alt="VideoGame">
-                    <div>
-                        <span id="Name--videoGame">Call of Duty</span>
-                        <span id="Most--played">250.000</span>
+                
+            </section>
+        </div>
+    </nav>
+    <!--Main-->
+    <main>
+        <div class="content--main">
+            <section class="Profile">
+                <article class="Details--profile">
+                    <div class="Imagen">
+                        <h2>Your Profile</h2>
+                        <div>
+                            <img src="../../../public/Imagen/Logo.jpg" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="Description--profile">
+                        <div>
+                            <span>Name:</span>
+                            <span id="Name-user">Jose Santana</span>
+                        </div>
+                        <div>
+                            <span>Time:</span>
+                            <span id="Time-user">2 years</span>
+                        </div>
+                        <div>
+                            <span>Favorite Game:</span>
+                            <span id="Favorite--user">Call of duty</span>
+                        </div>
+                        <div id="Paragraphy">
+                            <p>Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quidem laboriosam, fuga non odio vitae eos, dolor inventore amet molestiae a consequatur doloribus velit 
+                                perferendis excepturi esse quis optio repudiandae accusantium!</p>
+                        </div>
                     </div>
                 </article>
+                <article class="Games">
+                    <h3>Your Games</h3>
+                    <div class="Your-game" id="Your-game"></div>
+                </article>
+            </section>
+            <section class="Friends">
                 <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4gEE_tV1Hq2Iw4OLAUA6VaU8KJVZKZNMfA&s" alt="VideoGame">
+                    <h2>Friends</h2>
                     <div>
-                        <span id="Name--videoGame">Call of Duty</span>
-                        <span id="Most--played">250.000</span>
+                        <svg id="Left--arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/>
+                        </svg>
+                        <svg id="Right--arrow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
                     </div>
                 </article>
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4gEE_tV1Hq2Iw4OLAUA6VaU8KJVZKZNMfA&s" alt="VideoGame">
-                    <div>
-                        <span id="Name--videoGame">Call of Duty</span>
-                        <span id="Most--played">250.000</span>
+                <article class="List--friends" id="List--friends">
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
                     </div>
-                </article>
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4gEE_tV1Hq2Iw4OLAUA6VaU8KJVZKZNMfA&s" alt="VideoGame">
-                    <div>
-                        <span id="Name--videoGame">Call of Duty</span>
-                        <span id="Most--played">250.000</span>
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
                     </div>
-                </article>
-                <article>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4gEE_tV1Hq2Iw4OLAUA6VaU8KJVZKZNMfA&s" alt="VideoGame">
-                    <div>
-                        <span id="Name--videoGame">Call of Duty</span>
-                        <span id="Most--played">250.000</span>
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="List">
+                        <div>
+                            <img src="../../../public/Imagen/Foto.jpg" alt="Logo">
+                        </div>
                     </div>
                 </article>
             </section>
         </div>
-    </nav>
-    <!--Falta la main y el dialog-->
+        <!--Falta el dialog-->
+    </main>
 </body>
-<script src="../../../public/Js/Pages/Events.js"></script>
+<script src="../../../public/Js/Pages/Friends.js"></script>
 </html>
