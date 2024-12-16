@@ -1,4 +1,14 @@
 const key = 'd64b911edb634a9ca476c56451fc1fb4';
+// Evento para redirigir al login
+const Login = document.getElementById('Section');
+Login.addEventListener('click',()=>{
+    const enlace = '../Login/Login.html';
+    if(Login){
+        window.location.href = enlace;
+    }else{
+        console.log("Hubo un error");
+    }
+})
 //Evento para volver al dashboard
 let dashboard = document.getElementById('Dashboard');
 dashboard.addEventListener('click', () =>{

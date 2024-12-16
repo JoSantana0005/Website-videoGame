@@ -41,6 +41,7 @@ main form{
 main form h1{
     font-size: 2.3em;
     letter-spacing: 1px;
+    margin-top: 5px;
     color: var(--FontSpecific);
     font-style: italic;
     font-weight: 500;

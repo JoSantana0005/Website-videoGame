@@ -5,6 +5,17 @@ let Remove = document.getElementById('Remove');
 let Add = document.getElementById('Add');
 const AddPage = document.getElementById('ChangeAdd')
 const RemovePage = document.getElementById('ChangeRemove');
+// Evento para redirigir al login
+const Login = document.getElementById('Section');
+Login.addEventListener('click',()=>{
+    const enlace = '../Login/Login.html';
+    if(Login){
+        window.location.href = enlace;
+    }else{
+        console.log("Hubo un error");
+    }
+})
+
 // function para cambiar de pagina
 function ChangePageAdd(){
     AddPage.addEventListener('click',()=>{
