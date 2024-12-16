@@ -19,3 +19,108 @@ body{
     background-position-x: left;
     overflow: auto;
 }
+main {
+    width: 30%;
+    height: 360px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+main form{
+    box-shadow: 0 0 20px var(--PrimaryColor);
+    width: 90%;
+    height: 350px;
+    border-radius: 15px;
+    padding: 2px;
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+main form h1{
+    text-align: center;
+    color: var(--FontSpecific);
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+main form .Input-Container{
+    width: 95%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2px;
+    gap: 2px;
+}
+main form .Input-Container label{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    color: var(--PrimaryColor);
+    padding-left: 5px;
+}
+main form .Input-Container div{
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+main form .Input-Container div input{
+    width: 100%;
+    padding: 8px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--PrimaryColor);
+    border-right: 2px solid var(--PrimaryColor);
+    font-size: 1em;
+    color: var(--FontSpecific);
+    transition: .1s linear;
+}
+main form .Input-Container div input::placeholder{
+    color: var(--FontColor);
+}
+main form .Input-Container div input:hover{
+    background-color: var(--PrimaryColor);
+}
+main form .Input-Container div input:focus{
+    background-color: var(--PrimaryColor);
+}
+main form .Input-Container label svg{
+    position: relative;
+    left: 75%;
+    top: 35px;
+}
+#Lock{
+    left: 68%;
+}
+main form .Buttons{
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 4px;
+    padding: 5px;
+    
+}
+main form .Buttons button{
+    padding: 7px 10px;
+    width: 100%;
+    background-color: var(--PrimaryColor);
+    border: none;
+    border-radius: 30px;
+    color: var(--FontColor);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    transition: .1s linear;
+}
+main form .Buttons button:hover{
+    background-color: var(--FontSpecific);
+    color: var(--PrimaryColor);
+}
